@@ -1,0 +1,16 @@
+{
+  "name": "mogodb-section",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start":"nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongodb": "^6.15.0",
+    "nodemon": "^3.1.9"
+  }
+}
