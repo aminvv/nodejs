@@ -9,13 +9,15 @@ async function main() {
     const userCollection = db.collection("user")
     //result =userCollection.deleteOne({firstName:"hasan"})
     // result =userCollection.deleteOne({_id:new ObjectId("67fe247f831bef44228e1a94")})
-    result =userCollection.deleteMany({"address.city":"urmia"})
+    // result =userCollection.deleteMany({"address.city":"urmia"})
+    result =await userCollection.findOneAndDelete({firstName:"ali"})
     
 
     userCollection.countDocuments({}).then(count=>{
         console.log("count data.......>>>>",count);
         
     })
+    console.log("result.......>>>>",result);
 
 
 }
