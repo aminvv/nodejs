@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon updateMany.js"
+    "start":"nodemon find-optiob.js"
   },
   "keywords": [],
   "author": "",
