@@ -15,7 +15,7 @@ async function main() {
                 age: 26,
                 skills: ["back-ens", "NodeJs", "Mongodb", "Typescript", "NestJs"],
                 identity: '2741572496',
-                birthday: new Date("09-09-1999"),
+                birthday: new Date("09-09-2001"),
                 address: {
                     province: "azerbaijan",
                     city: "urmia",
@@ -28,7 +28,7 @@ async function main() {
                 age: 26,
                 skills: ["back-ens", "NodeJs", "Mongodb", "Typescript", "NestJs"],
                 identity: '2741572496',
-                birthday: new Date("09-09-1999"),
+                birthday: new Date("09-09-2000"),
                 address: {
                     province: "azerbaijan",
                     city: "urmia",
@@ -41,7 +41,7 @@ async function main() {
                 age: 26,
                 skills: ["back-ens", "NodeJs", "Mongodb", "Typescript", "NestJs"],
                 identity: '2741572496',
-                birthday: new Date("09-09-1999"),
+                birthday: new Date("09-09-2005"),
                 address: {
                     province: "azerbaijan",
                     city: "urmia",
