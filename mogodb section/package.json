@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start":"nodemon find-optiob.js"
+    "start":"nodemon aggregate.js"
   },
   "keywords": [],
   "author": "",
