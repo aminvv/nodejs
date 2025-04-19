@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb')
 
 
-exports.module = class connectToMongoDb {
+module.exports = class connectToMongoDb {
     #DB_URL = "mongodb://localhost:27017/nodejs-mongodb"
     #db = null
     async #connect() {

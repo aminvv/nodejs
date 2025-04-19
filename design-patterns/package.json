@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "singleton.js",
   "scripts": {
-    "start": " nodemon singleton.js"
+ "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
