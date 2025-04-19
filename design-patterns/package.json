@@ -1,17 +1,16 @@
 {
-  "name": "mogodb-section",
+  "name": "design-patterns",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "singleton.js",
   "scripts": {
-    "start": "nodemon aggregate.js"
+    "start": " nodemon singleton.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "mongodb": "^6.15.0",
     "nodemon": "^3.1.9"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
