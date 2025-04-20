@@ -1,20 +1,20 @@
  const fs=require("fs")
 
-//  dataStream=fs.ReadStream("./file.txt",'utf-8')  غیر اعدادی 
-//  dataStream=fs.ReadStream("./file.txt")
+//  readstream=fs.CreateReadStream("./file.txt",'utf-8')  غیر اعدادی 
+//  readstream=fs.CreateReadStream("./file.txt")
 //  let counter=0
-//  dataStream.on('ready',()=>{
+//  readstream.on('ready',()=>{
 //     console.log("data ready to read  stream");
 //  })
-//  dataStream.on('data',(chunk)=>{
+//  readstream.on('data',(chunk)=>{
 //     counter++
 //     console.log("###"+counter+ "---------chunk of  the data received");
 //     console.log(chunk);
 //  })
-//  dataStream.on('error',(error)=>{
+//  readstream.on('error',(error)=>{
 //     console.log("get error  when  read  data");
 //  })
-//  dataStream.on('end',()=>{
+//  readstream.on('end',()=>{
 //     console.log("action of  read stream ended");
 //  })
 
@@ -27,23 +27,62 @@
 
 
 
- dataStream=fs.ReadStream("./file.txt")
+//  readstream=fs.CreateReadStream("./file.txt")
+//  let counter=0
+//  let buff=[]
+//  readstream.on('ready',()=>{
+//     console.log("data ready to read  stream");
+//  })
+//  readstream.on('data',(chunk)=>{
+//     counter++
+//     console.log("###"+counter+ "---------chunk of  the data received");
+//     // console.log(chunk);
+//     buff.push(chunk)
+//  })
+//  readstream.on('error',(error)=>{
+//     console.log("get error  when  read  data");
+//  })
+//  readstream.on('end',()=>{
+//     console.log("action of  read stream ended");
+//     console.log(buff.toString());
+    
+//  })
+
+
+
+
+
+
+
+
+// ####### write stream----------------
+
+
+
+
+readstream=fs.createReadStream("./file.txt")
+writestream=fs.createWriteStream("./write.txt")
  let counter=0
- let buff=[]
- dataStream.on('ready',()=>{
+ readstream.on('ready',()=>{
     console.log("data ready to read  stream");
  })
- dataStream.on('data',(chunk)=>{
+ readstream.on('data',(chunk)=>{
     counter++
     console.log("###"+counter+ "---------chunk of  the data received");
     // console.log(chunk);
-    buff.push(chunk)
+    writestream.write(chunk)
+    
  })
- dataStream.on('error',(error)=>{
+ readstream.on('error',(error)=>{
     console.log("get error  when  read  data");
  })
- dataStream.on('end',()=>{
+ readstream.on('end',()=>{
     console.log("action of  read stream ended");
-    console.log(buff.toString());
+    
+ })
+
+
+ writestream.on("finish",()=>{
+    console.log("writing data finished");
     
  })
