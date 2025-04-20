@@ -29,3 +29,27 @@ const path=require("path")
 // console.log(__filename); ----------->>>>>>> C:\Users\aminv\OneDrive\Desktop\New folder\path\index.js
 
 
+
+
+
+
+// #####          OS
+
+
+
+// const os=require("os")
+
+//  const currentOs={
+//     name:os.type(),
+//     arch:os.arch(),
+//     platform:os.platform(),
+//     release:os.release(),
+//     version:os.version(),
+//  }
+
+//  console.log(currentOs);
+//  console.log(os.uptime());
+//  console.log(os.userInfo());
+//  console.log(os.totalmem());
+//  console.log(os.freemem());
+ 
