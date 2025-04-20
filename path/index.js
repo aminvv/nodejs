@@ -6,3 +6,26 @@ const path=require("path")
 // console.log(  path.basename("mongodb/data/users/server.html",".html"));  ---->>>>    server
 // console.log(  path.extname("mongodb/data/users/server.html",".html")); ----->>>    .html
 // console.log(  path.dirname("mongodb/data/users/server.html"));  ------>>>>      mongodb/data/users
+
+
+
+// console.log(  path.join("mongodb/data/users/server.html")) ------>>>>>>>>   mongodb\data\users\server.html 
+// console.log(  path.isAbsolute(path.join("/","mongodb/data/users/server.html")))  -------->>>>>>   true
+
+// console.log(  path.parse("/mongodb/data/users/server.html"))  
+//  --------->>>>>> 
+// {
+//     root: '/',
+//     dir: '/mongodb/data/users',
+//     base: 'server.html',
+//     ext: '.html',
+//     name: 'server'
+//   }
+
+
+// console.log(  path.normalize("C:\/mongodb/data////users/server.html"))  -------->>>>>>  C:\mongodb\data\users\server.html
+
+// console.log(__dirname); -------->>>>>> C:\Users\aminv\OneDrive\Desktop\New folder\path
+// console.log(__filename); ----------->>>>>>> C:\Users\aminv\OneDrive\Desktop\New folder\path\index.js
+
+
