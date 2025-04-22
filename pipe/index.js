@@ -9,7 +9,7 @@ const http=require("http")
 // readstream.pipe(writestream)
 
 
-http.createServer((req,res)=>{
+http.createServer(( req,res)=>{
 const readstream=fs.createReadStream("./file.txt")
 res.writeHead(200,{'Content-type':'text/plain'})
 readstream.pipe(res)
