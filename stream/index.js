@@ -83,6 +83,6 @@ writestream=fs.createWriteStream("./write.txt")
 
 
  writestream.on("finish",()=>{
-    console.log("writing data finished");
+    console.log("writing data finished ");
     
  })
